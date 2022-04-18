@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+h3 {text-align: center;}
+input {text-align: center;}
+h1 {text-align: center;}
+
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload</title>
+</head>
+<body style="background-color:powderblue;">
+	<h1>Project home page</h1>
+    <form action = "/display" method = "POST" 
+         enctype = "multipart/form-data">
+         <input type = "file" name = "file" />
+         <br><br>
+         <input type = "submit"/>
+         <input type = "reset"/>
+      </form>
+	
+	<br>
+        
+        <h3>{{ prediction_text }}</h3>
+	<br>
+</body>
+</html>
